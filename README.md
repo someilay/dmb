@@ -1,7 +1,7 @@
-# <ins>D</ins>epth everything <ins>M</ins>odel <ins>B</ins>enchmark
+# <ins>D</ins>epth anything <ins>M</ins>odel <ins>B</ins>enchmark
 
 ### Authors: Кирилин Антон, Милёшин Илья, Корнаев Алексей
-### Course: Computer Vision Project 2025 (HSE University)
+### Course: Computer Vision Project 2025 (Innopolis University)
 
 ---
 
@@ -28,21 +28,17 @@ We want to check:
 ### Selected Models:
 | Model        | Type | Characteristics              |
 |--------------|------|--------------------------------|
-| MiDaS v3.1   | Zero-shot | Strong generalization, relative depth |
-| Depth Anything | Zero-shot / Foundation | Best zero-shot depth estimation model in 2024 |
-| ZoeDepth     | Hybrid | Combines relative + metric depth |
-| AdaBins      | Supervised | Best indoor depth estimation model (NYUv2) |
-| NeW CRFs / DPT | Supervised | Best outdoor depth estimation models (KITTI) |
+| [MiDaS v3.1](https://github.com/isl-org/MiDaS)   | Zero-shot | Strong generalization, relative depth |
+| [Depth Anything V2](https://github.com/DepthAnything/Depth-Anything-V2) | Zero-shot / Foundation | Best zero-shot depth estimation model in 2024 |
 
 ---
 
-## Selected Datasets for Evaluation:
+## Datasets for Evaluation:
 | Dataset | Domain  | Notes |
 |---------|---------|------|
 | NYU Depth v2 | Indoor  | RGB-D dataset from Kinect |
 | KITTI        | Outdoor | Street scenes with LiDAR ground truth |
 | DIODE        | Mixed   | Indoor + Outdoor, high precision |
-| ETH3D / Middlebury | Evaluation | Accurate ground truth for detail comparison |
 
 ---
 
@@ -50,28 +46,20 @@ We want to check:
 - AbsRel (Absolute Relative Error)
 - RMSE (Root Mean Squared Error)
 - δ1 (Threshold accuracy)
-- Optional: Edge-based and gradient metrics.
-
----
-
-## Current Implementation:
-### Implemented in Google Colab:
-- Automated installation of dependencies.
-- Download and setup of all models via Torch Hub.
-- Automatic download of NYU Depth V2 sample dataset.
-- Batch inference with MiDaS, Depth Anything, ZoeDepth.
-- Calculation of metrics for depth estimation.
-- Visualization of results.
 
 ---
 
 ## Next Steps:
-- Extend evaluation to full NYU, KITTI, DIODE datasets.
-- Add fine-tuned supervised models (AdaBins, DPT KITTI).
-- Aggregate all results into summary tables.
-- Visual comparison of models on diverse scenes.
-- Prepare a tiny-paper report for a conference or internal presentation.
+- [ ] Write a scripts for inference of DAM V2 and MiDaS v3.1
+- [ ] Choose a dataset for evaluation (one or many)
+- [ ] Find an appropriate architecture for supervised model
+- [ ] Create a scritpt for supervised model training / inference
+- [ ] Compare a supervised model performance with DAM V2 & MiDaS v3.1 ones
+
+## Related works
+
+- [Depth Anything V2](https://arxiv.org/abs/2406.09414)
+- [Depth Anything: Unleashing the Power of Large-Scale Unlabeled Data](https://arxiv.org/abs/2401.10891)
+- [MiDaS v3.1 -- A Model Zoo for Robust Monocular Relative Depth Estimation](https://arxiv.org/abs/2307.14460)
 
 ---
-
-## Repository Structure:
