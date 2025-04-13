@@ -1,4 +1,4 @@
-<font size="9">**D**epth everything **M**odel **B**enchmark</font>
+# <ins>D</ins>epth everything <ins>M</ins>odel <ins>B</ins>enchmark
 
 ### Authors: Кирилин Антон, Милёшин Илья, Корнаев Алексей
 ### Course: Computer Vision Project 2025 (HSE University)
