@@ -1,4 +1,4 @@
-<font size="6">**D**epth everything **M**odel **B**enchmark</font>
+<font size="9">**D**epth everything **M**odel **B**enchmark</font>
 
 ### Authors: Кирилин Антон, Милёшин Илья, Корнаев Алексей
 ### Course: Computer Vision Project 2025 (HSE University)
