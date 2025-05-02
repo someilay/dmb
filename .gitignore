@@ -170,5 +170,7 @@ notebooks/runs
 # Ignore datasets in notebooks
 notebooks/datasets
 notebooks/Depth_Anything_V2
+notebooks/MiDaS
+notebooks/ZoeDepth
 notebooks/*.pth
 notebooks/*.jpg
